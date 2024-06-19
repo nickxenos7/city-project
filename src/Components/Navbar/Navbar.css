@@ -1,0 +1,112 @@
+nav {
+  width: 100%;
+  color: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  background: #6495edb3; 
+  transition: 0.5s;
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 10px;
+  background-color: #e0f7fa;
+  color: #00695c;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.welcome-message {
+  
+  display: none; 
+}
+
+.navbar-user span {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.user-menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #6495edb3;
+    display: none;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-actions {
+    flex-direction: column;
+  }
+}
